@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#section1 {
+    height: 1500px;
+    background-color: #1e212d;
+}
+
+h1 {
+    font-size: 64px;
+    position: relative;
+    top: 28%;  
+    left: 43%;  
+    color: white;
+}
+
+.heart {
+    font-size: 64px;
+    position: relative;
+    top: 28%;  
+    left: 42%;  
+    color: white;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -280px;
+    font-size: 100px;
+    background-image: url(./Images/valentine.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.bg {
+    background-image: url(.//Images/Rose.jpg);
+    height: 1000px;
+    background-attachment: fixed;
+    clip-path: circle(68.0% at 50% -20%);
+    background-size: cover;
+}
+
+.image-trans {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.first-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.first-box::after {
+    content: 'I';
+    color: white;
+    font-size: 82px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.first-box:hover::after {
+    opacity: 0.6;
+}
+
+.second-box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.second-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.second-box::after {
+    content: '';
+    background-image: url(./Images/Heart.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.second-box:hover::after {
+    opacity: 0.8;
+}
+
+.third-box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.third-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.third-box::after {
+    content: 'You';
+    color: white;
+    font-size: 82px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.third-box:hover::after {
+    opacity: 0.6;
+}
